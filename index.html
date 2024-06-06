@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
         <link rel="stylesheet" href="reset.css">
@@ -20,11 +21,20 @@
     <body>
         <header>
             <div class="header-top">
-                <button>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none"><script xmlns=""/><script xmlns=""/><script xmlns=""/>
-                        <path d="M27.4279 25.7749L19.6369 17.9839C20.8459 16.4209 21.4999 14.51 21.4999 12.5C21.4999 10.094 20.5609 7.83798 18.8629 6.13699C17.1649 4.436 14.903 3.5 12.5 3.5C10.097 3.5 7.83498 4.439 6.13699 6.13699C4.436 7.83498 3.5 10.094 3.5 12.5C3.5 14.903 4.439 17.1649 6.13699 18.8629C7.83498 20.5639 10.094 21.4999 12.5 21.4999C14.51 21.4999 16.4179 20.8459 17.9809 19.6399L25.7719 27.4279C25.7947 27.4508 25.8219 27.4689 25.8517 27.4813C25.8816 27.4936 25.9136 27.5 25.9459 27.5C25.9782 27.5 26.0102 27.4936 26.0401 27.4813C26.0699 27.4689 26.0971 27.4508 26.1199 27.4279L27.4279 26.1229C27.4508 26.1001 27.4689 26.0729 27.4813 26.0431C27.4936 26.0132 27.5 25.9812 27.5 25.9489C27.5 25.9166 27.4936 25.8846 27.4813 25.8547C27.4689 25.8249 27.4508 25.7977 27.4279 25.7749V25.7749ZM17.2519 17.2519C15.9799 18.5209 14.294 19.2199 12.5 19.2199C10.706 19.2199 9.01998 18.5209 7.74798 17.2519C6.47899 15.9799 5.77999 14.294 5.77999 12.5C5.77999 10.706 6.47899 9.01698 7.74798 7.74798C9.01998 6.47899 10.706 5.77999 12.5 5.77999C14.294 5.77999 15.9829 6.47599 17.2519 7.74798C18.5209 9.01998 19.2199 10.706 19.2199 12.5C19.2199 14.294 18.5209 15.9829 17.2519 17.2519Z" fill="black"/>
-                        <script xmlns=""/></svg>
-                </button>
+                <div class="button-wrap">
+                    <button type="button" class="menu mo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" viewBox="0 0 20 15" fill="none"><script xmlns=""/><script xmlns=""/><script xmlns=""/>
+                            <rect width="20" height="1.66667" fill="black"/>
+                            <rect y="6.66675" width="20" height="1.66667" fill="black"/>
+                            <rect y="13.3333" width="20" height="1.66667" fill="black"/>
+                            <script xmlns=""/></svg>
+                    </button>
+                    <button type="button" class="search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none"><script xmlns=""/><script xmlns=""/><script xmlns=""/>
+                            <path d="M27.4279 25.7749L19.6369 17.9839C20.8459 16.4209 21.4999 14.51 21.4999 12.5C21.4999 10.094 20.5609 7.83798 18.8629 6.13699C17.1649 4.436 14.903 3.5 12.5 3.5C10.097 3.5 7.83498 4.439 6.13699 6.13699C4.436 7.83498 3.5 10.094 3.5 12.5C3.5 14.903 4.439 17.1649 6.13699 18.8629C7.83498 20.5639 10.094 21.4999 12.5 21.4999C14.51 21.4999 16.4179 20.8459 17.9809 19.6399L25.7719 27.4279C25.7947 27.4508 25.8219 27.4689 25.8517 27.4813C25.8816 27.4936 25.9136 27.5 25.9459 27.5C25.9782 27.5 26.0102 27.4936 26.0401 27.4813C26.0699 27.4689 26.0971 27.4508 26.1199 27.4279L27.4279 26.1229C27.4508 26.1001 27.4689 26.0729 27.4813 26.0431C27.4936 26.0132 27.5 25.9812 27.5 25.9489C27.5 25.9166 27.4936 25.8846 27.4813 25.8547C27.4689 25.8249 27.4508 25.7977 27.4279 25.7749V25.7749ZM17.2519 17.2519C15.9799 18.5209 14.294 19.2199 12.5 19.2199C10.706 19.2199 9.01998 18.5209 7.74798 17.2519C6.47899 15.9799 5.77999 14.294 5.77999 12.5C5.77999 10.706 6.47899 9.01698 7.74798 7.74798C9.01998 6.47899 10.706 5.77999 12.5 5.77999C14.294 5.77999 15.9829 6.47599 17.2519 7.74798C18.5209 9.01998 19.2199 10.706 19.2199 12.5C19.2199 14.294 18.5209 15.9829 17.2519 17.2519Z" fill="black"/>
+                            <script xmlns=""/></svg>
+                    </button>
+                </div>
                 <div class="header-logo">
                     <a href="">
                         <img src="assets/logo.png" alt="">
@@ -236,47 +246,56 @@
                             <p>TEL 1644-8883 / MAIL HELP@NANING9.COM</p>
                         </div>
                     </div>
-                    <div class="footer-right col-lg-6 col-sm-12">
-                        <ul>
-                            <li><b>1644-8883</b></li>
-                            <li>평일<span>10:00 - 17:00</span></li>
-                            <li>점심<span>12:00 - 13:00</span></li>
-                            <li>휴일<span>토/일/공휴일</span></li>
-                        </ul>
-                        <ul>
-                            <li><b>BANK INFO</b></li>
-                            <li>반품 배송비 전용 입금계좌</li>
-                            <br>
-                            <li>기업<span>115-098448-01-050</span></li>
-                            <li>신한<span>100-024-375331</span></li>
-                            <li>국민<span>165837-04-009450</span></li>
-                            <br>
-                            <li>예금주 (주)엔라인</li>
-                        </ul>
-                        <ul>
-                            <li><b>DELIVERY</b></li>
-                            <li>타 택배 반품 시:<br>인천광역시 남동구 남동대로 378 (주)엔라인</li>
-                            <br>
-                            <li>CJ대한통운 반품시:<br>경기도 부천시 원미구 원미동 CJ대한통운 부천지점 난닝구앞</li>
-                            <br>
-                            <li>CJ대한통운사이트 접수시:<br>경기도 부천시 원미구 소사동 5번지 CJ대한통운 부천지점 난닝구</li>
-                        </ul>
+                    <div class="footer-right col-lg-6 col-sm-12 row">
+                        <div class="row col-md-8 col-sm-12">
+                            <ul class="col-sm-6">
+                                <li><b>1644-8883</b></li>
+                                <li>평일<span>10:00 - 17:00</span></li>
+                                <li>점심<span>12:00 - 13:00</span></li>
+                                <li>휴일<span>토/일/공휴일</span></li>
+                            </ul>
+                            <ul class="col-sm-6">
+                                <li><b>BANK INFO</b></li>
+                                <li>반품 배송비 전용 입금계좌</li>
+                                <br class="pc">
+                                <li>기업<span>115-098448-01-050</span></li>
+                                <li>신한<span>100-024-375331</span></li>
+                                <li>국민<span>165837-04-009450</span></li>
+                                <br class="pc">
+                                <li>예금주 (주)엔라인</li>
+                            </ul>
+                        </div>
+                        <div class="row col-md-4 col-sm-12">
+                            <ul class="col-md-12">
+                                <li><b>DELIVERY</b></li>
+                                <li>타 택배 반품 시:<br class="pc">인천광역시 남동구 남동대로 378 (주)엔라인</li>
+                                <br class="pc">
+                                <li>CJ대한통운 반품시:<br class="pc">경기도 부천시 원미구 원미동 CJ대한통운 부천지점 난닝구앞</li>
+                                <br class="pc">
+                                <li>CJ대한통운사이트 접수시:<br class="pc">경기도 부천시 원미구 소사동 5번지 CJ대한통운 부천지점 난닝구</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="copyright"><span>COPYRIGHT (C) NANING9. ALL RIGHTS RESERVED. NANING9.COM / 사용된 모든 이미지에 대한 무단복제를 금합니다.</span></div>
+            <div class="copyright"><span>COPYRIGHT (C) NANING9.<br class="mo"> ALL RIGHTS RESERVED. NANING9.COM <span class="pc">/</span><br class="mo"> 사용된 모든 이미지에 대한 무단복제를 금합니다.</span></div>
         </footer>
         <script>
 
             $(function() {
                 windowWidth = window.outerWidth;
-                prdCnt = windowWidth > 991 ? 8 : 6;
+                prdCnt = windowWidth > 991 ? 8 : windowWidth > 767 ? 6 : 4;
                 bnrCnt = windowWidth > 991 ? 3 : 2;
                 makeBannerSwiper(bnrCnt)
                 makeWeeklyBestSwiper();
 
                 window.onresize = function() {
                     let swiperDestroy = false;
+                    if(windowWidth > 767 && window.outerWidth <= 767) {
+                        swiperDestroy = true;
+                        prdCnt = 4;
+                        bnrCnt = 2;
+                    }
                     if(windowWidth > 991 && window.outerWidth <= 991) {
                         swiperDestroy = true;
                         prdCnt = 6;

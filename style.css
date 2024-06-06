@@ -2,7 +2,7 @@
     font-family: 'Noto Sans KR', 'Poppins', sans-serif;
 }
 .pc {
-    display: block;
+    display: initial;
 }
 .mo {
     display: none;
@@ -12,10 +12,10 @@
         font-size: 16px;
     }
     .pc {
-        display: none;
+        display: none !important;
     }
     .mo {
-        display: block;
+        display: initial !important;
     }
     .container {
         max-width: 90%;
@@ -34,15 +34,26 @@ header>div {
 header .header-top {
     padding: 48px 40px;
 }
+header .header-top .button-wrap {
+    font-size: 0;
+}
+header .header-top .button-wrap button {
+    display: inline-block;
+    vertical-align: middle;
+}
+header .header-top .button-wrap button:first-child {
+    margin-right: 24px;
+}
 header .header-top .header-logo {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     width: 200px;
+    text-align: center;
 }
 header .header-top .header-logo img {
-
+    display: inline-block;
 }
 header .header-top .auth-area {
     display: flex;
@@ -50,9 +61,8 @@ header .header-top .auth-area {
     align-items: center;
 }
 header .header-top .auth-area>* {
-    margin-left: 22px;
+    margin-left: 24px;
 }
-
 header .header-bottom {
     border-top: 1px solid #E6E6E6;
     border-bottom: 1px solid #E6E6E6;
@@ -75,13 +85,51 @@ header .header-bottom>div.bottom-right li {
         flex-direction: column;
     }
     header .header-bottom>div:first-child {
-        margin-bottom: 10px;
+        margin-bottom: 12px;
     }
 }
 @media (max-width: 991px) {
     header .header-bottom li {
         font-size: 16px;
+        white-space: nowrap;
     }
+}
+@media (max-width: 767px) {
+    header .header-top {
+        padding: 16px;
+    }
+    header .header-top .header-logo img {
+        width: 150px;
+    }
+    header .header-bottom {
+        padding: 12px;
+    }
+    header .header-bottom>div {
+        width: 100%;
+        overflow: hidden;
+    }
+    header .header-bottom>div:first-child {
+        margin-bottom: 24px;
+    }
+    header .header-bottom>div ul {
+        justify-content: flex-start;
+        overflow-x: scroll;
+    }
+    header .header-bottom>div ul li {
+        font-size: 14px;
+        word-wrap: normal;
+        word-break: keep-all;
+    }
+    header .header-top .auth-area span {
+        display: none;
+    }
+    header .header-top .button-wrap button:first-child {
+        margin-right: 12px;
+    }
+    header .header-top .auth-area>* {
+        margin-left: 12px;
+    }
+
 }
 
 
@@ -139,7 +187,10 @@ main {
     display: inline-block;
     height: 100%;
 }
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
+    .main-bottom-banner .row>div {
+        width: 50%;
+    }
     .main-bottom-banner .row>div:nth-child(2n+1) {
         text-align: right;
     }
@@ -233,6 +284,14 @@ main {
     top: 0;
     right: 0;
 }
+@media (max-width: 767px) {
+    .prd-wrapper .prd-list .prd-item .prd-info * {
+        font-size: 12px !important;
+    }
+    .prd-wrapper .prd-list .prd-item .prd-info .prd-color {
+        padding-top: 6px;
+    }
+}
 
 
 /**********************/
@@ -242,7 +301,9 @@ footer {
     border-top: 1px solid #E6E6E6;
     padding: 40px;
 }
-
+footer div.footer-wrap>div {
+    padding: 0;
+}
 footer div.footer-wrap .footer-left {
     justify-content: space-between;
     align-items: flex-start;
@@ -282,12 +343,20 @@ footer div.footer-wrap .footer-left .comp-addr {
 
 footer div.footer-wrap .footer-right {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: flex-start;
-    gap: 36px;
+}
+footer div.footer-wrap .footer-right * {
+    box-sizing: border-box;
+}
+footer div.footer-wrap .footer-right>div {
+    padding: 0;
+}
+footer div.footer-wrap .footer-right>div:first-child {
+
 }
 footer div.footer-wrap .footer-right ul {
-    width: calc(33.3% - 24px);
+    padding: 0;
 }
 footer div.footer-wrap .footer-right ul li:first-child {
     font-size: 20px;
@@ -328,5 +397,29 @@ footer .copyright {
     }
     footer div.footer-wrap .footer-left .footer-nav ul {
         justify-content: center;
+    }
+}
+@media (max-width: 767px) {
+    footer {
+        padding: 50px 12px 12px;
+    }
+    .prd-wrapper .prd-list .prd-item {
+        width: calc(50% - 12px);
+    }
+    footer div.footer-wrap .footer-right {
+        justify-content: center;
+    }
+    footer div.footer-wrap .footer-right>div:first-child {
+        justify-content: space-around;
+        margin-bottom: 24px;
+    }
+    footer div.footer-wrap .footer-right>div:first-child ul {
+        width: 50%;
+    }
+    footer div.footer-wrap .footer-right ul {
+        text-align: center;
+    }
+    footer .copyright {
+        line-height: 24px;
     }
 }
