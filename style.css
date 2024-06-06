@@ -98,8 +98,16 @@ header .header-bottom>div.bottom-right li {
     header .header-top {
         padding: 16px;
     }
+    header .header-top svg {
+        width: 24px;
+        height: 24px;
+    }
+    header .header-top button.menu svg {
+        width: 20px;
+        height: 15px;
+    }
     header .header-top .header-logo img {
-        width: 150px;
+        width: 120px;
     }
     header .header-bottom {
         padding: 12px;
@@ -196,6 +204,14 @@ main {
     }
     .main-bottom-banner .row>div:nth-child(2n) {
         text-align: left;
+    }
+}
+@media (max-width: 767px) {
+    .main-bottom-banner {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        max-width: 100%;
     }
 }
 
@@ -420,6 +436,8 @@ footer .copyright {
         text-align: center;
     }
     footer .copyright {
+        height: 100%;
         line-height: 24px;
+        padding-bottom: 24px;
     }
 }
