@@ -1,0 +1,137 @@
+.bannar-group .col-md-6 {
+    display: flex;
+}
+.bannar-group .col-md-6 a {
+    height: 50px;
+    display: flex;
+}
+.bannar-group .col-md-6 a img {
+    height: 100%;
+}
+.bannar-group .col-md-6:first-child a {
+    background-color: #ff9d42;
+    flex: 1 0 0;
+    justify-content: flex-end;
+}
+.bannar-group .col-md-6:last-child a {
+    flex: 1 0 0;
+    background-color: #1596f4;
+    justify-content: flex-start;
+}
+
+@media (min-width: 1024px) {
+    .bannar-area a {
+        padding: 0 60px;
+    }
+}
+
+/* header */
+header {
+    padding: 10px 0;
+}
+header div.container-fluid {
+    border-bottom: 1px solid #EAEDEF;
+}
+header div.container-fluid div.row {
+    height: 100%;
+    max-width: 1256px;
+    margin: 0 auto;
+    padding: 0 60px;
+}
+header div.container-fluid:first-child {
+    height: 80px;
+}
+header div.container-fluid:first-child div.row>div {
+    display: flex;
+    align-items: center;
+}
+header div.container-fluid:first-child div.row>div:first-child {
+    justify-content: flex-start;
+}
+header div.container-fluid:first-child div.row>div:last-child {
+    justify-content: flex-end;
+}
+header div.container-fluid:first-child h1 {
+    margin-right: 35px;
+}
+header div.container-fluid:first-child div.menu-area a {
+    display: inline-block;
+    border: none;
+    background: none;
+    font: inherit;
+    position: relative;
+    margin: 0 10px;
+    padding: 21px 5px 15px;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: bold;
+    color: #2F3438;
+    outline: none;
+}
+header div.container-fluid:first-child div.menu-area a:first-child {
+    color: #35C5F0;
+}
+header div.container-fluid:first-child div.search-area div.search {
+    border: 1px solid #DADDE0;
+    border-radius: 4px;
+    height: 40px;
+    padding: 0 14px;
+    width: 100%;
+    margin-right: 14px;
+    display: flex;
+    align-items: center;
+}
+header div.container-fluid:first-child div.search-area div.search span {
+    line-height: 40px;
+    margin-right: 10px;
+}
+header div.container-fluid:first-child div.search-area input {
+    background-color: transparent;
+    flex: 1;
+}
+header div.container-fluid:first-child div.search-area button.btn-cart {
+    padding: 6px;
+}
+header div.container-fluid:first-child div.search-area button.btn-cart i {
+    font-size: 20px;
+}
+header div.container-fluid:first-child ul {
+    display: flex;
+    margin-right: 10px;
+}
+header div.container-fluid:first-child ul li {
+    font-size: 14px;
+    line-height: 18px;
+    color: #2F3438;
+    padding: 0 10px;
+}
+header div.container-fluid:first-child ul li:not(:first-child) {
+    border-left: 1px solid #EAEDEF;
+}
+header div.container-fluid:first-child div.search-area button.btn-write {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    border-radius: 4px;
+    padding: 0 16px;
+    font-weight: 400;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #35C5F0;
+}
+header div.container-fluid:first-child div.search-area button.btn-write i {
+    margin-left: 5px;
+}
+header div.container-fluid:last-child {
+    /*height: 80px;*/
+}
+header div.container-fluid:last-child>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header div.container-fluid:last-child>div ul {
+    display: flex;
+    justify-content: flex-start;
+}

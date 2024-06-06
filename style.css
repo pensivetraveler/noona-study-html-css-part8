@@ -1,0 +1,295 @@
+* {
+    font-family: 'Noto Sans KR', 'Poppins', sans-serif;
+}
+
+
+/**********************/
+/* header */
+/**********************/
+header>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+header .header-top {
+    padding: 48px 40px;
+}
+header .header-top .header-logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+}
+header .header-top .header-logo img {
+
+}
+header .header-top .auth-area {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+header .header-top .auth-area>* {
+    margin-left: 22px;
+}
+
+header .header-bottom {
+    border-top: 1px solid #E6E6E6;
+    border-bottom: 1px solid #E6E6E6;
+    padding: 24px 40px;
+}
+header .header-bottom>div ul {
+    display: flex;
+}
+header .header-bottom>div ul li:not(:first-child) {
+    margin-left: 12px;
+}
+header .header-bottom>div.bottom-left li {
+    font-weight: 700;
+}
+header .header-bottom>div.bottom-right li {
+    font-weight: 300;
+}
+@media (max-width: 1650px) {
+    header .header-bottom {
+        flex-direction: column;
+    }
+    header .header-bottom>div:first-child {
+        margin-bottom: 10px;
+    }
+}
+
+
+/**********************/
+/* swiper */
+/**********************/
+main {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+/**********************/
+/* swiper */
+/**********************/
+.mySwiper {
+    margin: 48px 0;
+}
+.swiper-wrapper {
+    height: 80%;
+}
+.swiper-slide .text-wrap {
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+    color: white;
+}
+.swiper-slide .text-wrap p {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.swiper-slide .text-wrap p:last-child {
+    font-size: 16px;
+    font-weight: 400;
+}
+.swiper-pagination {
+    bottom: -40px !important;
+}
+.swiper-pagination span {
+    background-color: red !important;
+}
+
+
+/**********************/
+/* main-bottom-banner */
+/**********************/
+.main-bottom-banner {
+    margin-bottom: 48px;
+}
+.main-bottom-banner .row>div {
+    padding: 0;
+}
+
+
+/**********************/
+/* prd-list */
+/**********************/
+.prd-wrapper {
+    margin-bottom: 48px;
+    padding: 0;
+}
+.prd-wrapper h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.prd-wrapper .prd-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.prd-wrapper .prd-list .prd-item {
+    width: calc(25% - 18px);
+}
+.prd-wrapper .prd-list .prd-item .prd-thumbnail {
+    margin-bottom: 12px;
+}
+.prd-wrapper .prd-list .prd-item .prd-info {
+    position: relative;
+}
+.prd-wrapper .prd-list .prd-item .prd-info .prd-color {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap:4px;
+    margin-bottom: 12px;
+}
+.prd-wrapper .prd-list .prd-item .prd-info .prd-color span {
+    display: block;
+    width: 16px;
+    height: 3px;
+}
+.prd-wrapper .prd-list .prd-item .prd-info .prd-icon {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4px;
+    margin-bottom: 8px;
+}
+.prd-wrapper .prd-list .prd-item .prd-info .prd-name {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+.prd-wrapper .prd-list .prd-item .prd-info .prd-name:has(+ .prd-desc:not([hidden])) {
+    margin-bottom: 4px;
+}
+.prd-wrapper .prd-list .prd-item .prd-info .prd-desc {
+    color: #c50504;
+    margin-bottom: 8px;
+}
+.prd-wrapper .prd-list .prd-item .prd-info .prd-price {
+
+}
+.prd-wrapper .prd-list .prd-item .prd-info .prd-price {
+    line-height: 16px;
+}
+.prd-wrapper .prd-list .prd-item .prd-info .prd-price span {
+    margin-right: 8px;
+}
+.prd-wrapper .prd-list .prd-item .prd-info .prd-price .sale-price {
+    font-size: 16px;
+    font-weight: 700;
+}
+.prd-wrapper .prd-list .prd-item .prd-info .prd-price .orig-price {
+    text-decoration: line-through;
+}
+.prd-wrapper .prd-list .prd-item .prd-info .prd-price .disc-rate {
+    color: #c50504;
+    font-weight: 700;
+}
+.prd-wrapper .prd-list .prd-item .prd-info .prd-review {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+/**********************/
+/* footer */
+/**********************/
+footer {
+    border-top: 1px solid #E6E6E6;
+    padding: 40px;
+}
+
+footer div.footer-wrap .footer-left {
+    justify-content: space-between;
+    align-items: flex-start;
+}
+footer div.footer-wrap .footer-left .footer-logo {
+    margin-bottom: 16px;
+}
+footer div.footer-wrap .footer-left .footer-logo img {
+    display: inline-block;
+}
+footer div.footer-wrap .footer-left .footer-nav {
+    margin-bottom: 16px;
+}
+footer div.footer-wrap .footer-left .footer-nav ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+}
+footer div.footer-wrap .footer-left .footer-nav ul li {
+    position: relative;
+    color: #666;
+    line-height: 1;
+}
+footer div.footer-wrap .footer-left .footer-nav ul li:not(:first-child):before {
+    content: '|';
+    position: absolute;
+    top: 0;
+    left: -20px;
+    color: #ddd;
+}
+footer div.footer-wrap .footer-left .comp-addr {
+    color: #666;
+    line-height: 180%;
+    margin-bottom: 16px;
+}
+
+footer div.footer-wrap .footer-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 36px;
+}
+footer div.footer-wrap .footer-right ul {
+    width: calc(33.3% - 24px);
+}
+footer div.footer-wrap .footer-right ul li:first-child {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+footer div.footer-wrap .footer-right ul li {
+    color: #666;
+    margin-bottom: 4px;
+}
+footer div.footer-wrap .footer-right ul li span {
+    margin-left: 8px;
+}
+footer .copyright {
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+}
+@media (max-width: 991px) {
+    .swiper-slide .text-wrap p {
+        font-size: 16px;
+    }
+    .swiper-slide .text-wrap p:last-child {
+        font-size: 12px;
+    }
+    .prd-wrapper .prd-list .prd-item {
+        width: calc(33.3% - 16px);
+    }
+    footer div.footer-wrap {
+        flex-direction: column-reverse;
+    }
+    footer div.footer-wrap .footer-left {
+        margin-top: 48px;
+        text-align: center;
+    }
+    footer div.footer-wrap .footer-left .footer-logo {
+        text-align: center;
+        margin-bottom: 48px;
+    }
+    footer div.footer-wrap .footer-left .footer-nav ul {
+        justify-content: center;
+    }
+}
