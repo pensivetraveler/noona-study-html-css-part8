@@ -1,7 +1,26 @@
 * {
     font-family: 'Noto Sans KR', 'Poppins', sans-serif;
 }
-
+.pc {
+    display: block;
+}
+.mo {
+    display: none;
+}
+@media (max-width: 991px) {
+    * {
+        font-size: 16px;
+    }
+    .pc {
+        display: none;
+    }
+    .mo {
+        display: block;
+    }
+    .container {
+        max-width: 90%;
+    }
+}
 
 /**********************/
 /* header */
@@ -59,6 +78,11 @@ header .header-bottom>div.bottom-right li {
         margin-bottom: 10px;
     }
 }
+@media (max-width: 991px) {
+    header .header-bottom li {
+        font-size: 16px;
+    }
+}
 
 
 /**********************/
@@ -109,6 +133,19 @@ main {
 }
 .main-bottom-banner .row>div {
     padding: 0;
+    font-size: 0;
+}
+.main-bottom-banner .row>div a {
+    display: inline-block;
+    height: 100%;
+}
+@media (max-width: 991px) {
+    .main-bottom-banner .row>div:nth-child(2n+1) {
+        text-align: right;
+    }
+    .main-bottom-banner .row>div:nth-child(2n) {
+        text-align: left;
+    }
 }
 
 

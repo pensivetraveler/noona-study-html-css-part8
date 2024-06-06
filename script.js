@@ -1,5 +1,4 @@
 function makeBannerSwiper(slidePerView) {
-    console.log(slidePerView)
     mySwiper = new Swiper(".mySwiper", {
         slidesPerView: slidePerView,
         spaceBetween: 24,
